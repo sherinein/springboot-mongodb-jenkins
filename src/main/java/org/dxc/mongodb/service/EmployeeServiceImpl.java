@@ -22,12 +22,12 @@ public class EmployeeServiceImpl implements EmployeeService{
 	}
 	@Override
 	public Collection<Employee> getAllEmployees() {
-	
+		logger.info("==========getAllEmployees -EmployeeServiceImpl ===========");
 		return employeeRepository.findAll();
 	}
 	@Override
 	public Optional<Employee> findEmployeeById(int empid) {
-		
+		logger.info("==========findEmployeeById -EmployeeServiceImpl ===========");
 		return employeeRepository.findById(empid);
 		
 	}
